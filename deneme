@@ -1,0 +1,12 @@
+kullanıcıadı = ("alican")
+kullanıcışifresi =("123456")
+ad = input("kullanıcı adını giriniz")
+şifre = input ("kullanıcı şifresini giriniz")
+if ((kullanıcıadı == ad) and (kullanıcışifresi == şifre)):
+    print("kullanıcı girişi doğru hoşgeldiniz")
+elif ((kullanıcıadı == ad) and (kullanıcışifresi != şifre)):
+    print("kullanıcı şifresi hatalı")
+elif ((kullanıcışifresi != ad) and (kullanıcışifresi ==şifre)):
+    print("kullanıcı adı hatalı")
+else:
+    print("kullanıcı ve şifre hatalı tekrar deneyiniz")
