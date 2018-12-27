@@ -1,0 +1,21 @@
+kullanıcıadı=("alican2711")
+kullanıcıparolası=("2711")
+while (True):
+    ad = input("kullanıcı adını giriniz")
+    parola =input("kullanıcı parolasını giriniz")
+    if ((kullanıcıadı == ad) and (kullanıcıparolası == parola)):
+        print("kullanıcı girişi doğrulandı")
+        break
+    elif((kullanıcıadı != ad) and (kullanıcıparolası == parola)):
+        print("kullanıcı adını tekrar giriniz")
+    elif ((kullanıcıadı == ad) and (kullanıcıparolası != parola)):
+          print("kullanıcı parolası hatalı")
+          print("kullanıcı parolasını mı unuttunuz (E/H)")
+          cevap =input()
+          if (cevap == "E"):
+             yeniparola = input("yeni parolayı giriniz")
+             kullanıcıparolası = yeniparola
+             print("şifre başarıyla değiştirildi")
+             print("hoşgeldiniz")
+    else:
+        print("tekrar deneyiniz")
